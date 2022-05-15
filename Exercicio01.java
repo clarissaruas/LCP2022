@@ -15,10 +15,12 @@ public class Exercicio01 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Digite um número de 1 a 20: ");
         int num = scan.nextInt();
+        if (num > 20)
+            System.out.print("Número digitado é inválido");
         for (int i = 0; i < num; i++){
             int z;
             for (z=0; z < i+1; z++){
-                System.out.printf("*");
+                System.out.print("*");
             }
             System.out.println("");
         }
